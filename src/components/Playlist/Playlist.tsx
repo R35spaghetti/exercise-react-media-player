@@ -1,6 +1,6 @@
 import {ReactElement} from "react";
 import {IPlaylistBoxContainer} from "../../interfaces.ts";
-import {PlayButton} from "../PlayButton.tsx";
+import {PlayButton} from "./PlayButton.tsx";
 
 
 interface IPlaylistProps {
