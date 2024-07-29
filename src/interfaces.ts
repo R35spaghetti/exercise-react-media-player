@@ -9,6 +9,7 @@ export interface IPlaylistBoxContainer
 export interface IPlaylistBox
 {
     id: number;
+    image: string;
     band: string;
     song: string;
 }
