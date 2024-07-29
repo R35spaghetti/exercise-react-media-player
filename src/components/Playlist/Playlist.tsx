@@ -1,5 +1,6 @@
 import {ReactElement} from "react";
 import {IPlaylistBoxContainer} from "../../interfaces.ts";
+import {PlayButton} from "../PlayButton.tsx";
 
 
 interface IPlaylistProps {
@@ -14,6 +15,7 @@ export function Playlist({playlistBoxContainer}: IPlaylistProps): ReactElement {
                     <span>{playlistBox.image}</span>
                     <span>{playlistBox.band}</span>
                     <span>{playlistBox.song}</span>
+                    <PlayButton/>
                 </p>
             ))}
         </div>
