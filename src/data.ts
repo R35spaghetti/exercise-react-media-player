@@ -8,14 +8,14 @@ export const SongList = {
     songBoxes: {
         data:
             [
-                {id: 1, image: "img", band: "band", song: "sång",},
-                {id: 2, image: "img", band: "band nummer två", song: "sången",},
-                {id: 3, image: "img", band: "band", song: "sång",},
-                {id: 4, image: "img", band: "bandet", song: "sången",},
-                {id: 5, image: "img", band: "band", song: "sång",},
-                {id: 6, image: "img", band: "bandet", song: "sången",},
-                {id: 7, image: "img", band: "band", song: "sång",},
-                {id: 8, image: "img", band: "bandet", song: "sången",},
+                {id: 1, image: "img", band: "band", song: "sång", duration: 60},
+                {id: 2, image: "img", band: "band nummer två", song: "sången", duration: 60},
+                {id: 3, image: "img", band: "band", song: "sång", duration: 60},
+                {id: 4, image: "img", band: "bandet", song: "sången", duration: 60},
+                {id: 5, image: "img", band: "band", song: "sång", duration: 60},
+                {id: 6, image: "img", band: "bandet", song: "sången", duration: 60},
+                {id: 7, image: "img", band: "band", song: "sång", duration: 60},
+                {id: 8, image: "img", band: "bandet", song: "sången", duration: 60},
             ]
     }
 }
@@ -28,6 +28,7 @@ export function SetCurrentSongInfo(setCurrentSong: (song: ICurrentSong) => void,
             image: targetSong.image,
             band: targetSong.band,
             song: targetSong.song,
+            duration: targetSong.duration,
         });
     }
 }

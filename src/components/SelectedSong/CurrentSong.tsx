@@ -11,7 +11,9 @@ export function CurrentSong({currentSongId}: { currentSongId: number }) {
         image: "",
         band: "",
         song: "",
+        duration: 0,
     });
+
     useEffect(() => {
         SetCurrentSongInfo(setCurrentSong, {id: currentSongId});
     }, [currentSongId]);
@@ -22,7 +24,9 @@ export function CurrentSong({currentSongId}: { currentSongId: number }) {
             <p>{currentSong.band}</p>
             <p>{currentSong.song}</p>
             <FavoriteButton/>
+            <p>00:00</p>
             <AudioPlayer/>
+            <p>00:{currentSong.duration}</p>
             <Player/>
         </div>
     );
