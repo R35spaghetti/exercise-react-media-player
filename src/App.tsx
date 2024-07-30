@@ -7,8 +7,10 @@ export function App() {
     return (
         <>
             <Navbar/>
+            <div className={"content-container"}>
             <Playlist playlistBoxContainer={SongList.songBoxes}/>
             <CurrentSong currentSongId={1}></CurrentSong>
+            </div>
         </>
     );
 }

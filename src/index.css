@@ -1,0 +1,8 @@
+.content-container
+{
+    display: grid;
+    grid-template-columns: 35rem 1fr;
+    align-items: start;
+    height: 96vh;
+
+}

@@ -1,12 +1,19 @@
 .playlist-container {
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
+    display: grid;
+    grid-auto-flow: row;
+    overflow-y: scroll;
+    height: 100%;
+    padding: 5px;
+
 }
+
 .column {
     display: grid;
-    grid-template-columns: repeat(4,14em);
-    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     align-items: center;
+}
+.column-image {
+    width: 75%;
+    height: 75%;
 }

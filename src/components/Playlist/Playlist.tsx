@@ -12,7 +12,7 @@ export function Playlist({playlistBoxContainer}: IPlaylistProps): ReactElement {
         <div className="playlist-container">
             {playlistBoxContainer.data.map((playlistBox) => (
                 <p className="column" key={playlistBox.id}>
-                    <span><img src={playlistBox.image} alt={playlistBox.band}/></span>
+                    <span><img src={playlistBox.image} alt={playlistBox.band} className="column-image"/></span>
                     <span>{playlistBox.band} <br/>
                         {playlistBox.song}</span>
                     <PlayButton/>

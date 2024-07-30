@@ -20,15 +20,15 @@ export function CurrentSong({currentSongId}: { currentSongId: number }) {
     }, [currentSongId]);
     return (
         <div className="current-song-playing-container">
-            <div className="selected-song-container">
+            <div className="selected-song-image-container">
                 {currentSong.image &&
-                    <img src={currentSong.image} alt={currentSong.band} className="current-song-image"/>}
-                <div className="selected-song-content">
-                    <AddButton/>
-                    <p><strong>{currentSong.band}</strong> <br/>
-                        {currentSong.song}</p>
-                    <FavoriteButton/>
-                </div>
+                    <img src={currentSong.image} alt={currentSong.band} className="selected-song-image"/>}
+            </div>
+            <div className="selected-song-content">
+                <AddButton/>
+                <p><strong>{currentSong.band}</strong> <br/>
+                    {currentSong.song}</p>
+                <FavoriteButton/>
             </div>
             <div className="current-song-progress">
                 <p>00:00</p>
