@@ -1,7 +1,7 @@
 import {ICurrentSong, INavbar} from "./interfaces.ts";
 
 export const navbar: INavbar = {
-    title: "Playlist",
+    title: "Playlist - foo",
 };
 
 export const SongList = {
