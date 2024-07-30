@@ -1,0 +1,12 @@
+.playlist-container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+.column {
+    display: grid;
+    grid-template-columns: repeat(4,14em);
+    grid-template-rows: 1fr;
+    gap: 10px;
+    align-items: center;
+}

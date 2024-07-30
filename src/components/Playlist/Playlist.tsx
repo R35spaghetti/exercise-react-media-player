@@ -1,7 +1,7 @@
 import {ReactElement} from "react";
 import {IPlaylistBoxContainer} from "../../interfaces.ts";
 import {PlayButton} from "./PlayButton.tsx";
-
+import "./Playlist.css"
 
 interface IPlaylistProps {
     playlistBoxContainer: IPlaylistBoxContainer;
@@ -9,12 +9,12 @@ interface IPlaylistProps {
 
 export function Playlist({playlistBoxContainer}: IPlaylistProps): ReactElement {
     return (
-        <div className="playlist-box">
+        <div className="playlist-container">
             {playlistBoxContainer.data.map((playlistBox) => (
                 <p className="column" key={playlistBox.id}>
                     <span><img src={playlistBox.image} alt={playlistBox.band}/></span>
-                    <span>{playlistBox.band}</span>
-                    <span>{playlistBox.song}</span>
+                    <span>{playlistBox.band} <br/>
+                        {playlistBox.song}</span>
                     <PlayButton/>
                 </p>
             ))}
