@@ -1,0 +1,6 @@
+.audio-player-bar {
+    width: 50%;
+    height: 20px;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+}

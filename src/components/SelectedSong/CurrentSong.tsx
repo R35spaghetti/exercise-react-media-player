@@ -3,6 +3,7 @@ import {FavoriteButton} from "./FavoriteButton.tsx";
 import {useEffect, useState} from 'react';
 import {SetCurrentSongInfo} from "../../data.ts";
 import {Player} from "./Player.tsx";
+import {AudioPlayer} from "./AudioProgress.tsx";
 
 export function CurrentSong({currentSongId}: { currentSongId: number }) {
     const [currentSong, setCurrentSong] = useState({
@@ -21,6 +22,7 @@ export function CurrentSong({currentSongId}: { currentSongId: number }) {
             <p>{currentSong.band}</p>
             <p>{currentSong.song}</p>
             <FavoriteButton/>
+            <AudioPlayer/>
             <Player/>
         </div>
     );
