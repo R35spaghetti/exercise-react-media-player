@@ -10,9 +10,10 @@
 }
 
 .selected-song-image {
-    padding: 10px;
-    height: 100%;
-    width: 50%;
+    padding: 50px;
+    height: 300px;
+    width: 300px;
+    border-color: black;
 }
 
 .selected-song-content {
