@@ -14,9 +14,19 @@
     align-items: center;
 }
 
+.material-symbols-outlined {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 2mm ridge rgba(255, 198, 0, 0.98);
+    font-size: 1em;
+}
+
 .material-symbols-outlined:hover {
     background-color: green;
 }
+
 .column-image {
     width: 75%;
     height: 75%;
