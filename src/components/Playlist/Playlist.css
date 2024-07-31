@@ -13,7 +13,12 @@
     gap: 10px;
     align-items: center;
 }
+
+.material-symbols-outlined:hover {
+    background-color: green;
+}
 .column-image {
     width: 75%;
     height: 75%;
+
 }
